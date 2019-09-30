@@ -12,9 +12,9 @@ cache:
 
 deploy:
   provider: pages
-  github-token: $GITHUB_TOKEN
   skip-cleanup: true
-  local_dir: build
+  github-token: $GITHUB_TOKEN
+  keep_history: true
   on:
     all_branches: true 
 
